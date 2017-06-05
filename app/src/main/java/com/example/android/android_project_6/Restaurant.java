@@ -25,4 +25,9 @@ public class Restaurant {
     {
         return mLocation.getLocationByAdress();
     }
+
+    public String getGeoLocation()
+    {
+        return mLocation.getGeoLocationByAdress();
+    }
 }
