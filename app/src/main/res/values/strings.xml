@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Android_Project_6</string>
+
+    <!-- Main menu names -->
+    <string name="restaurants">Restaurants</string>
+    <string name="events">Events</string>
+    <string name="attractions">Attractions</string>
+    <string name="historical_sites">Historical sites</string>
+
 </resources>
