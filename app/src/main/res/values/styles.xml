@@ -9,7 +9,7 @@
     </style>
 
     <!-- Style for a category of vocabulary words -->
-    <style name="CentralScreenItem">
+    <style name="CentralScreenItemTextView">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/list_item_height</item>
         <item name="android:gravity">center</item>
@@ -17,6 +17,12 @@
         <item name="android:textColor">@android:color/black</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textAppearance">?android:textAppearanceMedium</item>
-        <item name="android:drawSelectorOnTop">true</item>
+
+    </style>
+    <style name="CentralScreenItemFramLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/CentralScreenItemColor</item>
+        <item name="android:layout_marginBottom">@dimen/menu_item_margin</item>
     </style>
 </resources>
