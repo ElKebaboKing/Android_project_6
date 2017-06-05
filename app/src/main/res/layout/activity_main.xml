@@ -8,24 +8,60 @@
     android:orientation="vertical"
     tools:context="com.example.android.android_project_6.MainActivity">
 
-    <TextView
-        android:id="@+id/restaurants"
-        style="@style/CentralScreenItem"
-        android:text="@string/restaurants"/>
+    <!-- Restaurants -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/CentralScreenItemColor">
+        <TextView
+            android:id="@+id/restaurants"
+            android:background="?android:attr/selectableItemBackground"
+            style="@style/CentralScreenItem"
+            android:text="@string/restaurants"/>
+    </FrameLayout>
 
-    <TextView
-        android:id="@+id/attractions"
-        style="@style/CentralScreenItem"
-        android:text="@string/attractions"/>
+    <!-- Attractions -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/CentralScreenItemColor">
 
-    <TextView
-        android:id="@+id/events"
-        style="@style/CentralScreenItem"
-        android:text="@string/events"/>
+        <TextView
+            android:id="@+id/attractions"
+            android:background="?android:attr/selectableItemBackground"
+            style="@style/CentralScreenItem"
+            android:text="@string/attractions"/>
 
-    <TextView
-        android:id="@+id/historical_sights"
-        style="@style/CentralScreenItem"
-        android:text="@string/historical_sites"/>
+    </FrameLayout>
+
+    <!-- Events -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/CentralScreenItemColor">
+
+        <TextView
+            android:id="@+id/events"
+            android:background="?android:attr/selectableItemBackground"
+            style="@style/CentralScreenItem"
+            android:text="@string/events"/>
+
+    </FrameLayout>
+
+    <!-- Historical sites -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/CentralScreenItemColor">
+
+        <TextView
+            android:id="@+id/historical_sites"
+            android:background="?android:attr/selectableItemBackground"
+            style="@style/CentralScreenItem"
+            android:text="@string/historical_sites"/>
+
+    </FrameLayout>
+
+
 
 </LinearLayout>
