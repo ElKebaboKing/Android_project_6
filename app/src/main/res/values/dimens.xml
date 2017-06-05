@@ -3,4 +3,6 @@
     <!-- Height of each list item -->
     <dimen name="list_item_height">88dp</dimen>
     <dimen name="menu_item_margin">1dp</dimen>
+    <dimen name="list_text_size">18sp</dimen>
+    <dimen name="list_item_padding">16dp</dimen>
 </resources>
