@@ -32,15 +32,15 @@ public class Location {
 
     public String getLocationByAdress()
     {
-        return mAdress;
+        return ("geo:0,0?q=" + mAdress);
     }
 
     public String getLocationByStreetName()
     {
-        return (mStreetName + mStreetNumber + "," + mPostCode);
+        return ("geo:0,0?q=" + mStreetName + mStreetNumber + "," + mPostCode);
     }
     public String getLocationByGPS()
     {
-        return("geo:" + mLatitude + "," + mLongitude);
+        return("geo:" + mLatitude + "," + mLongitude + "?q=query");
     }
 }
