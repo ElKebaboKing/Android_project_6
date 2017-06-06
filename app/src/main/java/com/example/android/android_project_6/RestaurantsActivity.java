@@ -41,7 +41,7 @@ public class RestaurantsActivity extends AppCompatActivity {
             {
                 Restaurant restaurant = restaurants.get(position);
 
-                Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(restaurant.getLocation()));
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(restaurant.getGeoLocation()));
                 mapIntent.setPackage("com.google.android.apps.maps");
                 startActivity(mapIntent);
             }
