@@ -31,7 +31,7 @@ public class RestaurantsActivity extends AppCompatActivity {
         restaurants.add(new Content("SUBWAY Borås", "Stora Brogatan 5. 503 30 Borås"));
 
         ContentAdapter itemsAdapter = new ContentAdapter(this, restaurants, R.color.restaurants);
-        ListView listView = (ListView) findViewById(R.id.restaurant_list);
+        ListView listView = (ListView) findViewById(R.id.content_list);
         listView.setAdapter(itemsAdapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener()

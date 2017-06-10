@@ -23,13 +23,12 @@ public class AttractionsActivity extends AppCompatActivity {
 
         final ArrayList<Content> attractions = new ArrayList<Content>();
 
-        attractions.add(new Content("La Copita", "Allégatan 63, 503 37 Borås"));
-        attractions.add(new Content("Byblos pizzeria", "Åsbogatan 9, 503 36 Borås"));
-        attractions.add(new Content("Vinacciolo", "Österlånggatan 23, 503 31 Borås"));
-        attractions.add(new Content("Spice'n Rice", "Allégatan 49, 503 37 Borås"));
-        attractions.add(new Content("Borås Kebab", "Lilla Brogatan 7, 503 30 Borås"));
-        attractions.add(new Content("Masaki", "Hallbergsgatan 10, 503 30 Borås"));
-        attractions.add(new Content("SUBWAY Borås", "Stora Brogatan 5. 503 30 Borås"));
+        attractions.add(new Content("Borås Zoo", "Alidelundsgatan 11, 506 31 Borås"));
+        attractions.add(new Content("Borås Museum", "Ramnaparken, 504 39 Borås"));
+        attractions.add(new Content("Stadsparksbadet", "Sven Eriksonsgatan 29, 503 38 Borås"));
+        attractions.add(new Content("Borås Textile Museum", "Skaraborgsvägen 3A, 506 30 Borås"));
+        attractions.add(new Content("Borås Art Museum", "P A Halls Terrass, P.A. Halls Terrass 4, 501 15 Borås"));
+        attractions.add(new Content("Abecita Art Museum", "Herrljungagatan 15, 506 30 Borås"));
 
         ContentAdapter itemsAdapter = new ContentAdapter(this, attractions, R.color.attractions);
         ListView listView = (ListView) findViewById(R.id.content_list);
