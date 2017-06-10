@@ -18,19 +18,19 @@ public class RestaurantsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.restaurant_list);
+        setContentView(R.layout.content_list);
 
-        final ArrayList<Restaurant> restaurants = new ArrayList<Restaurant>();
+        final ArrayList<Content> restaurants = new ArrayList<Content>();
 
-        restaurants.add(new Restaurant("La Copita", "Allégatan 63, 503 37 Borås"));
-        restaurants.add(new Restaurant("Byblos pizzeria", "Åsbogatan 9, 503 36 Borås"));
-        restaurants.add(new Restaurant("Vinacciolo", "Österlånggatan 23, 503 31 Borås"));
-        restaurants.add(new Restaurant("Spice'n Rice", "Allégatan 49, 503 37 Borås"));
-        restaurants.add(new Restaurant("Borås Kebab", "Lilla Brogatan 7, 503 30 Borås"));
-        restaurants.add(new Restaurant("Masaki", "Hallbergsgatan 10, 503 30 Borås"));
-        restaurants.add(new Restaurant("SUBWAY Borås", "Stora Brogatan 5. 503 30 Borås"));
+        restaurants.add(new Content("La Copita", "Allégatan 63, 503 37 Borås"));
+        restaurants.add(new Content("Byblos pizzeria", "Åsbogatan 9, 503 36 Borås"));
+        restaurants.add(new Content("Vinacciolo", "Österlånggatan 23, 503 31 Borås"));
+        restaurants.add(new Content("Spice'n Rice", "Allégatan 49, 503 37 Borås"));
+        restaurants.add(new Content("Borås Kebab", "Lilla Brogatan 7, 503 30 Borås"));
+        restaurants.add(new Content("Masaki", "Hallbergsgatan 10, 503 30 Borås"));
+        restaurants.add(new Content("SUBWAY Borås", "Stora Brogatan 5. 503 30 Borås"));
 
-        RestaurantAdapter itemsAdapter = new RestaurantAdapter(this, restaurants, R.color.restaurants);
+        ContentAdapter itemsAdapter = new ContentAdapter(this, restaurants, R.color.restaurants);
         ListView listView = (ListView) findViewById(R.id.restaurant_list);
         listView.setAdapter(itemsAdapter);
 
@@ -39,7 +39,7 @@ public class RestaurantsActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id)
             {
-                Restaurant restaurant = restaurants.get(position);
+                Content restaurant = restaurants.get(position);
 
                 Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(restaurant.getGeoLocation()));
                 mapIntent.setPackage("com.google.android.apps.maps");

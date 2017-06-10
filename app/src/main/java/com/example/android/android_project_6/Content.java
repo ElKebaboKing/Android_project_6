@@ -6,12 +6,12 @@ import android.util.Log;
  * Created by es013620 on 2017-06-05.
  */
 
-public class Restaurant {
+public class Content {
 
     private String mName;
     private Location mLocation;
 
-    public Restaurant(String name, String adress)
+    public Content(String name, String adress)
     {
         mName = name;
         mLocation = new Location(adress);

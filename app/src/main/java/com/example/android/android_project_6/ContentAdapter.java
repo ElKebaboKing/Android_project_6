@@ -14,11 +14,11 @@ import java.util.ArrayList;
  * Created by es013620 on 2017-06-05.
  */
 
-public class RestaurantAdapter extends ArrayAdapter<Restaurant> {
+public class ContentAdapter extends ArrayAdapter<Content> {
 
     private int mColor;
 
-    public RestaurantAdapter(Activity context, ArrayList<Restaurant> restaurants, int color)
+    public ContentAdapter(Activity context, ArrayList<Content> restaurants, int color)
     {
         super(context, 0, restaurants);
         mColor = color;
@@ -34,7 +34,7 @@ public class RestaurantAdapter extends ArrayAdapter<Restaurant> {
                     R.layout.list_item, parent, false);
 
         // Get the object located at this position in the list
-        Restaurant restaurant = getItem(position);
+        Content restaurant = getItem(position);
 
         // Find the restaurant name TextView
         TextView nameTextView = (TextView) listItemView.findViewById(R.id.name_text_view);
