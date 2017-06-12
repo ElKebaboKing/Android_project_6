@@ -23,13 +23,9 @@ public class EventsActivity extends AppCompatActivity {
 
         final ArrayList<Content> events = new ArrayList<Content>();
 
-        events.add(new Content("La Copita", "Allégatan 63, 503 37 Borås"));
-        events.add(new Content("Byblos pizzeria", "Åsbogatan 9, 503 36 Borås"));
-        events.add(new Content("Vinacciolo", "Österlånggatan 23, 503 31 Borås"));
-        events.add(new Content("Spice'n Rice", "Allégatan 49, 503 37 Borås"));
-        events.add(new Content("Borås Kebab", "Lilla Brogatan 7, 503 30 Borås"));
-        events.add(new Content("Masaki", "Hallbergsgatan 10, 503 30 Borås"));
-        events.add(new Content("SUBWAY Borås", "Stora Brogatan 5. 503 30 Borås"));
+        events.add(new Content("Summer Thursdays", "Torggatan 25, 503 34 Borås"));
+        events.add(new Content("Borås Pride", "Torggatan 25, 503 34 Borås"));
+        events.add(new Content("Borås Birthday", "Stadsparken, 503 38 Borås"));
 
         ContentAdapter itemsAdapter = new ContentAdapter(this, events, R.color.events);
         ListView listView = (ListView) findViewById(R.id.content_list);
