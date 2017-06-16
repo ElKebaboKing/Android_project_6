@@ -5,24 +5,7 @@ package com.example.android.android_project_6;
  */
 
 public class Location {
-    private String mStreetName, mPostCode, mStreetNumber, mAdress;
-    private double mLatitude, mLongitude;
-
-    // Location by street name and postal code
-    public Location(String streetName, String streetNumber, String postCode)
-    {
-        mStreetName = streetName;
-        mStreetNumber = streetNumber;
-        mPostCode = postCode;
-
-    }
-
-    // Location by coordinates
-    public Location(double latitude, double longitude)
-    {
-        mLatitude = latitude;
-        mLongitude = longitude;
-    }
+    private String  mAdress;
 
     // Location by adress
     public Location(String adress)
@@ -38,15 +21,5 @@ public class Location {
     public String getLocationByAdress()
     {
         return (mAdress);
-    }
-
-    public String getLocationByStreetName()
-    {
-        return ("geo:0,0?q=" + mStreetName + mStreetNumber + "," + mPostCode);
-    }
-
-    public String getLocationByGPS()
-    {
-        return("geo:" + mLatitude + "," + mLongitude + "?q=query");
     }
 }
