@@ -10,6 +10,7 @@ public class Content {
 
     private String mName;
     private Location mLocation;
+    private int mImageResourceId;
 
     public Content(String name, String adress)
     {
@@ -17,10 +18,20 @@ public class Content {
         mLocation = new Location(adress);
     }
 
+    public Content(String name, String adress, int imageResourceId)
+    {
+        mName = name;
+        mLocation = new Location(adress);
+        mImageResourceId = imageResourceId;
+    }
+
     public String getName()
     {
         return mName;
     }
+
+    public int getImageResourceId() {return mImageResourceId;}
+
     public String getLocation()
     {
         return mLocation.getLocationByAdress();

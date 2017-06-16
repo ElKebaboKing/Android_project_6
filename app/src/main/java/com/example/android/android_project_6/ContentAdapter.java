@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -34,17 +35,29 @@ public class ContentAdapter extends ArrayAdapter<Content> {
                     R.layout.list_item, parent, false);
 
         // Get the object located at this position in the list
-        Content restaurant = getItem(position);
+        Content content = getItem(position);
 
         // Find the restaurant name TextView
         TextView nameTextView = (TextView) listItemView.findViewById(R.id.name_text_view);
         // Set restaurant name
-        nameTextView.setText(restaurant.getName());
+        nameTextView.setText(content.getName());
 
         // Find the restaurant adress TextView
         TextView locationTextView = (TextView) listItemView.findViewById(R.id.location_text_view);
         // Set restaurant location
-        locationTextView.setText(restaurant.getLocation());
+        locationTextView.setText(content.getLocation());
+
+        // Find the ImageView
+        ImageView imageView = (ImageView) listItemView.findViewById(R.id.image);
+        // Set the image
+        imageView.setImageResource(content.getImageResourceId());
+
+        if (content.getImageResourceId()>0)
+            // Make image visible
+            imageView.setVisibility(View.VISIBLE);
+        else
+            // Make image disappear
+            imageView.setVisibility(View.GONE);
 
         // Set the theme color for the list item
         View itemContainer = listItemView.findViewById(R.id.list_item_container);
