@@ -23,12 +23,12 @@ public class AttractionsActivity extends AppCompatActivity {
 
         final ArrayList<Content> attractions = new ArrayList<Content>();
 
-        attractions.add(new Content("Borås Zoo", "Alidelundsgatan 11, 506 31 Borås"));
-        attractions.add(new Content("Borås Museum", "Ramnaparken, 504 39 Borås"));
-        attractions.add(new Content("Stadsparksbadet", "Sven Eriksonsgatan 29, 503 38 Borås"));
-        attractions.add(new Content("Borås Textile Museum", "Skaraborgsvägen 3A, 506 30 Borås"));
-        attractions.add(new Content("Borås Art Museum", "P A Halls Terrass, P.A. Halls Terrass 4, 501 15 Borås"));
-        attractions.add(new Content("Abecita Art Museum", "Herrljungagatan 15, 506 30 Borås"));
+        attractions.add(new Content(getString(R.string.boras_zoo),getString(R.string.boras_zoo_address)));
+        attractions.add(new Content(getString(R.string.boras_museum),getString(R.string.boras_museum_address)));
+        attractions.add(new Content(getString(R.string.stadsparksbadet),getString(R.string.stadsparksbadet_address)));
+        attractions.add(new Content(getString(R.string.boras_textile_museum),getString(R.string.boras_textile_museum_address)));
+        attractions.add(new Content(getString(R.string.boras_art_museum),getString(R.string.boras_art_museum_address)));
+        attractions.add(new Content(getString(R.string.abecita_art_museum),getString(R.string.abecita_art_museum_address)));
 
         ContentAdapter itemsAdapter = new ContentAdapter(this, attractions, R.color.attractions);
         ListView listView = (ListView) findViewById(R.id.content_list);

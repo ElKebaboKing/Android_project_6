@@ -22,13 +22,13 @@ public class RestaurantsActivity extends AppCompatActivity {
 
         final ArrayList<Content> restaurants = new ArrayList<Content>();
 
-        restaurants.add(new Content("La Copita", "Allégatan 63, 503 37 Borås"));
-        restaurants.add(new Content("Byblos pizzeria", "Åsbogatan 9, 503 36 Borås"));
-        restaurants.add(new Content("Vinacciolo", "Österlånggatan 23, 503 31 Borås"));
-        restaurants.add(new Content("Spice'n Rice", "Allégatan 49, 503 37 Borås"));
-        restaurants.add(new Content("Borås Kebab", "Lilla Brogatan 7, 503 30 Borås"));
-        restaurants.add(new Content("Masaki", "Hallbergsgatan 10, 503 30 Borås"));
-        restaurants.add(new Content("SUBWAY Borås", "Stora Brogatan 5. 503 30 Borås"));
+        restaurants.add(new Content(getString(R.string.la_copita),getString(R.string.la_copita_address)));
+        restaurants.add(new Content(getString(R.string.byblos_pizzeria),getString(R.string.byblos_pizzeria_address)));
+        restaurants.add(new Content(getString(R.string.vinacciolo),getString(R.string.vinacciolo_address)));
+        restaurants.add(new Content(getString(R.string.spice_n_rice),getString(R.string.spice_n_rice_address)));
+        restaurants.add(new Content(getString(R.string.boras_kebab),getString(R.string.boras_kebab_address)));
+        restaurants.add(new Content(getString(R.string.masaki),getString(R.string.masaki_address)));
+        restaurants.add(new Content(getString(R.string.subway),getString(R.string.subway_address)));
 
         ContentAdapter itemsAdapter = new ContentAdapter(this, restaurants, R.color.restaurants);
         ListView listView = (ListView) findViewById(R.id.content_list);

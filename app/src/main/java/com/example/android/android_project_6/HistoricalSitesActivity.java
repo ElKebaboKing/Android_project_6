@@ -23,12 +23,11 @@ public class HistoricalSitesActivity extends AppCompatActivity {
 
         final ArrayList<Content> historicalSites = new ArrayList<Content>();
 
-        historicalSites.add(new Content("Water Tower", "Gustav Adolfsgatan 27, 504 56 Borås"));
-        historicalSites.add(new Content("Gustaf II Adolf statue", "Stora Brogatan 22, 503 30 Borås"));
-        historicalSites.add(new Content("Museum of History", "Ramnaparken, Boras 504 39, Sweden"));
-        historicalSites.add(new Content("Gustav Adolf Church", "Salängsgatan 1, 504 56 Borås"));
-        historicalSites.add(new Content("Caroli Church", "Skolgatan 1, 503 33 Borås"));
-        historicalSites.add(new Content("", ""));
+        historicalSites.add(new Content(getString(R.string.water_tower),getString(R.string.water_tower_address)));
+        historicalSites.add(new Content(getString(R.string.statue),getString(R.string.statue_address)));
+        historicalSites.add(new Content(getString(R.string.museum_history),getString(R.string.museum_history)));
+        historicalSites.add(new Content(getString(R.string.gustav_church),getString(R.string.gustav_church_address)));
+        historicalSites.add(new Content(getString(R.string.caroli_church),getString(R.string.caroli_church_address)));
 
         ContentAdapter itemsAdapter = new ContentAdapter(this, historicalSites, R.color.historical_sites);
         ListView listView = (ListView) findViewById(R.id.content_list);

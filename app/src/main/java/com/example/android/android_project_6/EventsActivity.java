@@ -23,9 +23,9 @@ public class EventsActivity extends AppCompatActivity {
 
         final ArrayList<Content> events = new ArrayList<Content>();
 
-        events.add(new Content("Summer Thursdays", "Torggatan 25, 503 34 Borås", R.drawable.summer_thursdays));
-        events.add(new Content("Borås Pride", "Torggatan 25, 503 34 Borås", R.drawable.pride));
-        events.add(new Content("Borås Birthday", "Stadsparken, 503 38 Borås", R.drawable.birthday_boras));
+        events.add(new Content(getString(R.string.summer_thursdays),getString(R.string.summer_thursdays_address), R.drawable.summer_thursdays));
+        events.add(new Content(getString(R.string.boras_pride),getString(R.string.boras_pride_address), R.drawable.pride));
+        events.add(new Content(getString(R.string.boras_birthday),getString(R.string.boras_birthday_address), R.drawable.birthday_boras));
 
         ContentAdapter itemsAdapter = new ContentAdapter(this, events, R.color.events);
         ListView listView = (ListView) findViewById(R.id.content_list);

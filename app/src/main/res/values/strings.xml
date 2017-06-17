@@ -7,4 +7,57 @@
     <string name="attractions">Attractions</string>
     <string name="historical_sites">Historical sites</string>
 
+    <!-- Attractions activity -->
+    <string name="boras_zoo">Borås Zoo</string>
+    <string name="boras_museum">Borås Museum</string>
+    <string name="stadsparksbadet">Stadsparksbadet</string>
+    <string name="boras_textile_museum">Borås Textile Museum</string>
+    <string name="boras_art_museum">Borås Art Museum</string>
+    <string name="abecita_art_museum">Abecita Art Museum</string>
+
+    <string name="boras_zoo_address">Alidelundsgatan 11, 506 31 Borås</string>
+    <string name="boras_museum_address">Ramnaparken, 504 39 Borås</string>
+    <string name="stadsparksbadet_address">Sven Eriksonsgatan 29, 503 38 Borås</string>
+    <string name="boras_textile_museum_address">Skaraborgsvägen 3A, 506 30 Borås</string>
+    <string name="boras_art_museum_address">P A Halls Terrass, P.A. Halls Terrass 4, 501 15 Borås</string>
+    <string name="abecita_art_museum_address">Herrljungagatan 15, 506 30 Borås</string>
+
+    <!-- Historical sites -->
+    <string name="water_tower">Water Tower</string>
+    <string name="statue">Gustaf II Adolf statue</string>
+    <string name="museum_history">Museum of History</string>
+    <string name="gustav_church">Gustav Adolf Church</string>
+    <string name="caroli_church">Caroli Church</string>
+
+    <string name="water_tower_address">Gustav Adolfsgatan 27, 504 56 Borås</string>
+    <string name="statue_address">Stora Brogatan 22, 503 30 Borås</string>
+    <string name="museum_history_address">Ramnaparken, Boras 504 39, Sweden</string>
+    <string name="gustav_church_address">Salängsgatan 1, 504 56 Borås</string>
+    <string name="caroli_church_address">Skolgatan 1, 503 33 Borås</string>
+
+    <!-- Restaurants activity -->
+    <string name="la_copita">La Copita</string>
+    <string name="byblos_pizzeria">Byblos Pizzeria</string>
+    <string name="vinacciolo">Vinacciolo</string>
+    <string name="spice_n_rice">Spice\'n Rice</string>
+    <string name="boras_kebab">Borås Kebab</string>
+    <string name="masaki">Masaki</string>
+    <string name="subway">Subway Borås</string>
+
+    <string name="la_copita_address">Allégatan 63, 503 37 Borås</string>
+    <string name="byblos_pizzeria_address">Åsbogatan 9, 503 36 Borås</string>
+    <string name="vinacciolo_address">Österlånggatan 23, 503 31 Borås</string>
+    <string name="spice_n_rice_address">Allégatan 49, 503 37 Borås</string>
+    <string name="boras_kebab_address">Lilla Brogatan 7, 503 30 Borås</string>
+    <string name="masaki_address">Hallbergsgatan 10, 503 30 Borås</string>
+    <string name="subway_address">Stora Brogatan 5. 503 30 Borås</string>
+
+    <!-- Events activity -->
+    <string name="summer_thursdays">Summer Thursdays</string>
+    <string name="boras_pride">Borås Pride</string>
+    <string name="boras_birthday">Borås Birthday</string>
+
+    <string name="summer_thursdays_address">Torggatan 25, 503 34 Borås</string>
+    <string name="boras_pride_address">Torggatan 25, 503 34 Borås</string>
+    <string name="boras_birthday_address">Stadsparken, 503 38 Borås</string>
 </resources>
